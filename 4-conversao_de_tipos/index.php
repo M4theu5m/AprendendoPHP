@@ -23,6 +23,7 @@
     //Resto da divisão
     $resto = (5%3);
     var_dump($resto);
+    echo "<br/>";
 
     //Funções matemáticas
     //sin() - calcula o seno em ângulo em radianos
@@ -37,4 +38,34 @@
     //sqtr() - retorna raiz
     //pow - retorna potencias
     //pi() - retorna pi
+
+    //Lidando com Strings
+    //Concatenação - adicionamos um '.' entre as strings
+    $texto1 = "Dá para unir ";
+    $texto2 = " ou até mais.";
+    $numeral = 10;
+    $composto = $texto1.$numeral.$texto2;
+    echo $composto;
+    echo "<br/>";
+
+    // substuidor de palavras e expressões.
+    $e = str_replace('manga', 'pera', "Fulano comia manga, mas depois novamente comeu manga<br/>");
+    echo $e;
+
+    //strolower - tudo minúsculo
+    echo strtolower("TUDO MAIUSCULO<br/>");
+
+    //stroupper - tudo maiúsculo.
+    echo strtoupper("tudo minusculo<br/>");
+
+    //substr - retorna um pedaço da string
+    $string = "ABCDEF";
+    $sub = substr($string, -2);
+    var_dump($sub);
+    echo "<br/>";
+
+    //ucfirst - primeira letra maiuscula.
+    //ucwords - corvete a primeira letra de todas palavras em maiucula.
+    //chop - elimina espaços brancos consecutivos.
+    //explode - quebra a string em pedaços, usando um separador
 ?>
