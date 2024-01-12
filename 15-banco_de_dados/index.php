@@ -1,7 +1,8 @@
 <?php 
-// $banco = new PDO('mysql:host=hostdobancodedados;dbname=basededados', 'root', '');
+require_once("class/class_pessoas.php");
 
-foreach(PDO::getAvailableDrivers() as $driver){
-    echo $driver."<br/>";
-}
+$objPessoa = new Pessoas;
+$nome = "Matheus";
+$profissao = 'Programador';
+$objPessoa->novaPessoa($nome, $profissao);
 ?>
